@@ -45,22 +45,19 @@
 #def recorrido(lista):
     #while lista
 
-lista=("Danna","Alejandro","Andrea","Alvaro","Daniel","Alejandra","Huber","Sebastian","Lina","Laura")
-def recorrido(lista):
-    for i in lista:
-     print(i)
-print(recorrido(lista))
-#def orden(lista):
- #   lista.sort(reverse=True)
-  #  print(f"{lista}")
-#print(orden(lista))
-def buscar(lista):
-    while lista != 'a':
-        print('La letra no es la que busco')
-        lista = input('introduce una letra ')
-    print ('la letra es a, por eso salgo del bucle')
-print(buscar(lista))
-def longitud(lista):
-    c=len(lista)
-    print(c)
-print(longitud(lista))
+numeros=[5,10,3,5,1,46,33,6,32,523,52,3,2,2423,5,2,15,2]
+cadena=""
+coma=","
+for i in numeros:
+    print(i)
+cadena+=str(i)+coma
+print(cadena)
+def contador(lista):
+    numeros.sort(reverse=True)
+    print(numeros)
+def buscar(numeros):
+    buscar=input('Digite el valor a buscar: ')
+    while numeros != "no":
+        print(buscar)
+ 
+print( contador(numeros), buscar(numeros))
